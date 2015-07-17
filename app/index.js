@@ -14,12 +14,11 @@ app.use('/assets', express.static(__dirname + '/assets', {
 // routes
 require('./routes')(app)
 
-app.listen(config.app.port, config.app.ip, function (error) {
+app.listen(config.app.port, function (error) {
   if (error) console.error(error)
 
   else {
-    var msg = config.app.name + ' started on http://'
-    msg += config.app.ip + ':' + config.app.port
+    var msg = config.app.name + ' started on port: '+ config.app.port
     console.log(msg)
   }
 })

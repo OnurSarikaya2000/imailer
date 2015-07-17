@@ -4,8 +4,7 @@ var STAGING = process.env.NODE_ENV === 'staging'
 
 config.app = {
   name: 'skeleton',
-  port: process.env.EXPRESS_PORT || process.env.PORT || 3500,
-  ip: '0.0.0.0' || 'localhost'
+  port: process.env.EXPRESS_PORT || process.env.PORT || 3500
 }
 
 config.assets = {
