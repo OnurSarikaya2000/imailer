@@ -8,6 +8,7 @@ Basic skeleton for sites running on node.
 
 # Development
 
+- npm start
 - gulp dev
 
 # Production
