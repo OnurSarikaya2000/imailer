@@ -1,6 +1,6 @@
 # Tom's Skeleton
 
-Basic skeleton for sites running on node.
+Basic front end skeleton for sites running on node.
 
 # Running
 
