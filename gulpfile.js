@@ -6,9 +6,6 @@ var babelify = require('babelify')
 var source = require('vinyl-source-stream')
 var buffer = require('vinyl-buffer')
 var reload = browserSync.reload
-var imagemin = require('gulp-imagemin')
-var rimraf = require('rimraf')
-var runSequence = require('run-sequence')
 var csso = require('gulp-csso')
 var uglify = require('gulp-uglify')
 
@@ -47,7 +44,7 @@ gulp.task('js-prd', function () {
     .pipe(gulp.dest('app/assets/dist/'))
 })
 
-gulp.task('go', ['css-prd', 'js'], function() {
+gulp.task('go', ['css', 'js'], function() {
   browserSync.init({
     proxy: 'localhost:3500',
     port: 3501,

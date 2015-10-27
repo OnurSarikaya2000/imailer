@@ -6,8 +6,6 @@ module.exports = function(app) {
     res.render('pages/home', {
       title: config.app.name
     })
-
-    console.log(config.app.name)
   })
 
 }
