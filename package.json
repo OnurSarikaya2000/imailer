@@ -26,6 +26,7 @@
     "gulp-uglify": "^1.2.0",
     "jade": "^1.10.0",
     "jquery": "^2.1.4",
+    "osa-imessage": "^1.0.7",
     "sourdough-grid": "^0.1.0",
     "sourdough-reset": "^0.2.0",
     "sourdough-typography": "^0.3.0",
