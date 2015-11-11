@@ -1,4 +1,3 @@
-import config from './config'
 import {EventEmitter} from 'events'
 import BrowserSize from 'browser-size'
 
@@ -15,4 +14,4 @@ app.browser = new BrowserSize()
 
 // ;[CONTROLLERS HERE].forEach(controller => controller(app))
 
-console.info(`${config.name} App Started`)
+console.info(`App Started`)

@@ -1,24 +1,24 @@
-var express = require('express')
-var config = require('./config')
-var app = express()
+require('dotenv').load()
+
+const express = require('express')
+const app = express()
+
+app.set('port', process.env.NODE_PORT || 3000)
 
 // views
 app.set('views', __dirname + '/views')
 app.set('view engine', 'jade')
 
 // static files (cache for 30 days in production)
-app.use('/assets', express.static(__dirname + '/assets', {
-  maxAge: config.assets.maxAge
-}))
+app.use('/assets', express.static(__dirname + '/assets'))
 
 // routes
 require('./routes')(app)
 
-app.listen(config.app.port, function (error) {
+app.listen(app.get('port'), function (error) {
   if (error) console.error(error)
 
   else {
-    var msg = config.app.name + ' started on port: '+ config.app.port
-    console.log(msg)
+    console.log(`${process.env.APP_NAME} has started on port ${app.get('port')}`)
   }
 })
