@@ -1,14 +1,14 @@
 {
-  "name": "mailman",
+  "name": "imailer",
   "version": "0.1.0",
-  "description": "NodeJS based CLI for sending iMessages.",
+  "description": "NodeJS based CLI for sending iMessages and sms.",
   "preferGlobal": true,
   "bin": {
-    "mailman": "index.js"
+    "mailmen": "index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:tomhardman0/mailman.git"
+    "url": "git@github.com:tomhardman0/imailer.git"
   },
   "author": "Tom Hardman"
 }
