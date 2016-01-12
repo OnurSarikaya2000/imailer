@@ -10,10 +10,10 @@ CLI interface for sending imessages and sms. OSX and messages app required.
 
 `mailman ${to} ${message}`
 
-- ${to}
+- `${to}`
     - Phone number, contact, or email address for iMessages.
     - Phone number only for sms.
-- ${message}
+- `${message}`
     - Single words can be unquoted, otherwise the message should be surrounded by quotation marks.
 
 # Road map
