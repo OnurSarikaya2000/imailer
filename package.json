@@ -1,36 +1,19 @@
 {
-  "name": "skeleton",
-  "version": "1.0.0",
-  "description": "Tom's front end skeleton environment",
+  "name": "mailman",
+  "version": "0.0.1",
+  "description": "NodeJS based CLI for sending iMessages.",
   "main": "app/index.js",
   "scripts": {
-    "postinstall": "gulp build",
-    "start": "node app/index.js"
+    "start": "node app/index.js --use-strict"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:tomhardman0/skeleton.git"
+    "url": "git@github.com:tomhardman0/mailman.git"
   },
   "author": "Tom Hardman",
   "dependencies": {
-    "babelify": "^6.1.2",
-    "browser-size": "^0.1.0",
-    "browser-sync": "^2.7.6",
-    "browserify": "^10.2.3",
-    "dotenv": "^1.2.0",
-    "express": "^4.12.4",
-    "gsap": "^1.17.0",
-    "gulp": "^3.9.0",
-    "gulp-csso": "^1.0.0",
-    "gulp-sourdough": "^1.0.2",
-    "gulp-uglify": "^1.2.0",
-    "jade": "^1.10.0",
-    "jquery": "^2.1.4",
-    "osa-imessage": "^1.0.7",
-    "sourdough-grid": "^0.1.0",
-    "sourdough-reset": "^0.2.0",
-    "sourdough-typography": "^0.3.0",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "dotenv": "",
+    "express": "",
+    "osa-imessage": ""
   }
 }
