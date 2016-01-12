@@ -1,19 +1,14 @@
 {
   "name": "mailman",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "NodeJS based CLI for sending iMessages.",
-  "main": "app/index.js",
-  "scripts": {
-    "start": "node app/index.js --use-strict"
+  "preferGlobal": true,
+  "bin": {
+    "mailman": "index.js"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:tomhardman0/mailman.git"
   },
   "author": "Tom Hardman",
-  "dependencies": {
-    "dotenv": "",
-    "express": "",
-    "osa-imessage": ""
-  }
 }

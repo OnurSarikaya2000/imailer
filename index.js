@@ -1,18 +1,27 @@
-require('dotenv').load();
+#! /usr/bin/env node --use-strict
 
-const express = require('express');
-const app = express();
-const messages = require('osa-imessage');
+const exec = require('child_process').exec;
 
-app.set('port', process.env.NODE_PORT || 3000);
+let userArgs = process.argv.slice(2);
+let to = userArgs[0];
+let message = userArgs[1];
 
-app.listen(app.get('port'), (error) => {
-  if (error) console.error(error);
-  else {console.log(`${process.env.APP_NAME} has started on port ${app.get('port')}`)};
-})
+let sms = 'service "SMS"';
+let imessage = '(service 1 whose service type is iMessage)';
+let method = userArgs[2] === 'sms' ? sms : imessage;
 
-// app.get('/ping', (req, res) => {
-    messages.send('hi', process.env.NUMBER, (e) => {
-        console.log(e);
+// Create command
+let command = `/usr/bin/osascript -e 'tell application "Messages"
+                send "${message}" to buddy "${to}" of ${method}
+                end tell'`;
+
+// Check user input
+if (!userArgs[0]) throw new Error('Please add your phone number.');
+if (!userArgs[1]) throw new Error('Please add a message.');
+
+else {
+    exec(command, (err, stdout, stderr) => {
+        if (err) throw new Error(err);
+        else console.log('Message sent.');
     });
-// })
+}
