@@ -1,14 +1,14 @@
-# Mailmen
+# iMailer
 
 CLI interface for sending imessages and sms. OSX and messages app required.
 
 # Install
 
-`npm install -g mailmen`
+`npm install -g imailer`
 
 # Usage
 
-`mailmen ${to} ${message}`
+`imailer ${to} ${message}`
 
 - `${to}`
     - Phone number, contact, or email address for iMessages.

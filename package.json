@@ -4,7 +4,7 @@
   "description": "NodeJS based CLI for sending iMessages and sms.",
   "preferGlobal": true,
   "bin": {
-    "mailmen": "index.js"
+    "imailer": "index.js"
   },
   "repository": {
     "type": "git",
