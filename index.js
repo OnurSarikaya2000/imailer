@@ -1,6 +1,7 @@
 #! /usr/bin/env node --use-strict
 
 const exec = require('child_process').exec;
+const colors = require('colors');
 
 let userArgs = process.argv.slice(2);
 let to = userArgs[0];
@@ -16,12 +17,12 @@ let command = `/usr/bin/osascript -e 'tell application "Messages"
                 end tell'`;
 
 // Check user input
-if (!userArgs[0]) throw new Error('Please add your phone number.');
-if (!userArgs[1]) throw new Error('Please add a message.');
+if (!userArgs[0]) console.error('You didn\'t enter a recipient!'.red);
+if (!userArgs[1]) console.error('You didn\'t enter a message!'.red);
 
 else {
     exec(command, (err, stdout, stderr) => {
         if (err) throw new Error(err);
-        else console.log('Message sent.');
+        else console.log(`Message sent to ${to}!`.green);
     });
 }

@@ -1,6 +1,6 @@
 {
   "name": "imailer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "NodeJS based CLI for sending iMessages and sms.",
   "preferGlobal": true,
   "bin": {
@@ -10,5 +10,9 @@
     "type": "git",
     "url": "git@github.com:tomhardman0/imailer.git"
   },
-  "author": "Tom Hardman"
+  "author": "Tom Hardman",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2"
+  }
 }
