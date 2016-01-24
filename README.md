@@ -1,6 +1,8 @@
 # iMailer
 
-CLI interface for sending iMessages and sms. OSX and messages app required.
+CLI interface for sending imessages and sms. OSX and messages app required. [Available on NPM](https://www.npmjs.com/package/imailer).
+
+![iMailer example](http://i.imgur.com/UctycXe.gif)
 
 # Install
 
