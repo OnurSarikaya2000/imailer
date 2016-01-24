@@ -23,6 +23,7 @@ CLI interface for sending imessages and sms. OSX and messages app required. [Ava
 ## Examples
 
 `imailer "+447463 383 992" "Hi Jeff!"`
+
 `imailer 07352009813 "Hi again Jeff!" sms`
 
 # Changelog
