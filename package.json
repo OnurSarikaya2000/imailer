@@ -1,6 +1,6 @@
 {
   "name": "imailer",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "description": "NodeJS based CLI for sending iMessages and sms.",
   "preferGlobal": true,
   "bin": {
