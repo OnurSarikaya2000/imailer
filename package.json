@@ -10,6 +10,15 @@
     "type": "git",
     "url": "git@github.com:tomhardman0/imailer.git"
   },
+  "keywords": [
+    "imessage",
+    "imessages",
+    "sms",
+    "text",
+    "cli",
+    "osx",
+    "apple"
+  ],
   "author": "Tom Hardman",
   "license": "MIT",
   "dependencies": {
