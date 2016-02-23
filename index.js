@@ -18,8 +18,7 @@ let command = `/usr/bin/osascript -e 'tell application "Messages"
 
 // Check user input
 if (!userArgs[0]) console.error('You didn\'t enter a recipient!'.red);
-if (!userArgs[1]) console.error('You didn\'t enter a message!'.red);
-
+else if (!userArgs[1]) console.error('You didn\'t enter a message!'.red);
 else {
     exec(command, (err, stdout, stderr) => {
         if (err) throw new Error(err);
