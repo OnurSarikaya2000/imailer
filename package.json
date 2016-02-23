@@ -6,6 +6,9 @@
   "bin": {
     "imailer": "index.js"
   },
+  "scripts": {
+    "test": "echo This is currently placeholding."
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:tomhardman0/imailer.git"
