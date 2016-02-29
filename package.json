@@ -7,7 +7,7 @@
     "imailer": "index.js"
   },
   "scripts": {
-    "test": "echo This is currently placeholding."
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
