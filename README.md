@@ -41,4 +41,4 @@ CLI interface for sending imessages and sms. OSX and messages app required. [Ava
 
 ## 0.1.0
 
-- Inital version.
+- Initial version.
