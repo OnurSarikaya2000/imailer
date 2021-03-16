@@ -3,7 +3,7 @@
 const exec = require('child_process').exec;
 const colors = require('colors');
 
-const sms = 'service "SMS"';
+const sms = '(service 1 whose service type is SMS)';
 const imessage = '(service 1 whose service type is iMessage)';
 
 let userArgs = process.argv.slice(2);
